@@ -1,0 +1,9 @@
+{$CADDY_HOST} {
+  proxy / metabase:3000 {
+    transparent
+  }
+
+  gzip
+
+  tls {%CADDY_TLS_EMAIL%}
+}
